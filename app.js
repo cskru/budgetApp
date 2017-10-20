@@ -228,12 +228,12 @@ var UIController = (function () {
             if(type === 'inc') {
                 element = DOMStrings.incomeContainer;
                 
-                html = '<div class="item clearfix" id="inc-%id%"> <div class="item__description">%description%</div> <div class="right clearfix"> <div class="item__value">%value%</div> <div class="item__delete"> <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button> </div> </div> </div>';
+                html = '<div class="item clearfix" id="inc-%id%"> <div class="item__description">%description%</div> <div class="right clearfix"> <div class="item__value">%value%</div> <div class="item__delete"> <button class="item__delete--btn">Delete Entry</button> </div> </div> </div>';
             }
             else if(type === 'exp') {
                 element = DOMStrings.expencesContainer;
                 
-                html = '<div class="item clearfix" id="exp-%id%"> <div class="item__description">%description%</div> <div class="right clearfix"> <div class="item__value">%value%</div> <div class="item__percentage">21%</div> <div class="item__delete"> <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button> </div> </div> </div>';
+                html = '<div class="item clearfix" id="exp-%id%"> <div class="item__description">%description%</div> <div class="right clearfix"> <div class="item__value">%value%</div> <div class="item__percentage">21%</div> <div class="item__delete"> <button class="item__delete--btn">Delete Entry</button> </div> </div> </div>';
             }
             
             //Replace the placeholders with respective values
@@ -442,8 +442,8 @@ var controller = (function (budgetCtrl, UICtrl) { // Why pass arguements, we can
         
         var itemID, splitID, type, ID;
         
-        //console.log(event.target.parentNode.parentNode.parentNode.parentNode.id);
-        itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
+        console.log(event.target.parentNode.parentNode.parentNode.id);
+        itemID = event.target.parentNode.parentNode.parentNode.id;
         
         if(itemID) {
             

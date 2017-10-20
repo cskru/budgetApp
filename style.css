@@ -24,7 +24,7 @@ body {
 }
 
 .right { float: right; }
-.red { color: #FF5049 !important; }
+.red { background-color: #FF5049 !important; }
 .red-focus:focus { border: 1px solid #FF5049 !important; }
 
 /**********************************************
@@ -153,15 +153,19 @@ body {
 .add__value { width: 100px;}
 
 .add__btn {
-    font-size: 35px;
+    font-size: 20px;
     background: none;
     border: none;
-    color: #28B9B5;
+    background-color: #28B9B5;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     line-height: 1.1;
     margin-left: 10px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .add__btn:active { transform: translateY(2px); }
@@ -231,15 +235,13 @@ h2 {
     text-align: center;
 }
 
-.income .item__value,
 .income .item__delete--btn {
-    color: #28B9B5;
+    background-color: #28B9B5;
 }
 
-.expenses .item__value,
-.expenses .item__percentage,
+
 .expenses .item__delete--btn {
-    color: #FF5049;
+    background-color: #FF5049;
 }
 
 
@@ -248,14 +250,19 @@ h2 {
 }
 
 .item__delete--btn {
-    font-size: 22px;
-    background: none;
+    font-size: 15px;
     border: none;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
     display: none;
+    
+    color: #ffffff;
+    margin-left: 10px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .item__delete--btn:focus { outline: none; }
